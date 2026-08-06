@@ -21,7 +21,6 @@ Each shop will behave normally, including Sly's additional stock with shopkeeper
 - **CondensedSpoilerLogger**: The condensed log will have a section for Vendors.
 - **QoL**: Lemm will still be able to sell all from the right side if the setting is enabled.
 - **RandoMapMod**: To avoid spoiling their locations, previewable shop pins are placed in the center of the map just above City Storerooms.
-- **RandoSettingsManager**: When sharing a settings code, VendorRando settings will be included.
 
 ## Compatibilities
 - ✔Lemm's Shop from **MoreLocations** is verified to function as intended.

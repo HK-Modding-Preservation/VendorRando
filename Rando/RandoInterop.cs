@@ -27,23 +27,23 @@ namespace VendorRando {
 
             SettingsLog.AfterLogSettings += LogRandoSettings;
 
-            if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod) {
+            if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
                 CondensedSpoilerLogger.AddCategory("Vendors", (args) => true, Consts.AccessNames);
-            }
-
-            if(ModHooks.GetMod("RandoSettingsManager") is Mod) {
+            
+            if(ModHooks.GetMod("RandoSettingsManager") is Mod)
                 RSMInterop.Hook();
-            }
 
+            if(ModHooks.GetMod("ConnectionSettingsRando") is Mod)
+                CSRInterop.Hook();
+            
             if(ModHooks.GetMod("LoreCore") is Mod && ModHooks.GetMod("LoreRandomizer") is Mod) {
                 loreExists = true;
                 IseldaContainer.setupLoreIntegration();
                 SalubraContainer.setupLoreIntegration();
             }
             
-            if(ModHooks.GetMod("MultiWorldMod") is Mod) {
+            if(ModHooks.GetMod("MultiWorldMod") is Mod)
                 CompatibilityChecks.PatchMultiWorld();
-            }
         }
 
         public static void DefineLocations() {
