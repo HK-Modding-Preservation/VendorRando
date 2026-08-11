@@ -130,7 +130,7 @@ namespace VendorRando {
                     return true;
                 }
                 if(type == typeof(ObjectLocation)) {
-                    if(location == LocationNames.Resting_Grounds_Map || location == LocationNames.Elevator_Pass)
+                    if(location == LocationNames.Resting_Grounds_Map || location == LocationNames.Elevator_Pass || location == LocationNames.Geo_Rock_Crossroads_Goam_Damage_Boost)
                         return false;
                     return true;
                 }
